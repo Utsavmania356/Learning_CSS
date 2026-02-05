@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:red
+}
+
+#navbar{
+    background-color: black;
+    height: 60px;
+}
+button{
+    background-color: rgb(98, 98, 6);
+}
+#logo{
+    color: blue;
+    font-size: large;
+}
+a{
+    margin-right: 160px;
+}
+
+#no{
+    background-color:pink;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 60px;
+    display: inline-block;
+    
+}
+#yes{
+    display: block;
+}
+
+#box1{
+ height: 100px;
+ width: 100px;
+ margin: 25px;
+ padding: 25px;
+ display: inline-block;
+ background-color:rgba(0, 0, 255, 0.75)
+
+}
+
+
+#box2{
+ height: 100px;
+ width: 100px;
+ margin: 25px;
+ padding: 25px;
+ display: inline-block;
+ background-color: rgba(0, 0, 255, 1)
+
+}
+#box3{
+ height: 100px;
+ width: 100px;
+ margin: 25px;
+ padding: 25px;
+ display: inline-block;
+ background-color:rgba(0, 0, 255, 0.5)
+
+}
+

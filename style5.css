@@ -1,0 +1,33 @@
+#box1{
+    height: 100px;
+    width: 200px;
+    background-color: yellow;
+    font-size: 20px;
+}
+
+#box2{
+    height: 100px;
+    width:30%;
+    background-color: chocolate;
+    margin-left: 20px;
+    font-size: 2em;
+}
+div1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+}
+#box3{
+    position: static;
+    top: 20px;
+}
+#box4{
+    position: relative;
+    top:20px;
+    left:12px;
+}
+#box5{
+    position: absolute;
+    top: 20px;
+}

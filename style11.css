@@ -1,0 +1,114 @@
+/* -----------------------------
+   BASIC PAGE STYLING
+------------------------------ */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 80px;
+}
+
+/* Container to place boxes in one row */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+/* Common style for all boxes */
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: steelblue;
+  color: white;
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =================================================
+   MOVE ANIMATION
+================================================= */
+.move {
+
+  /* animation-name:
+     Name of the keyframes to use */
+  animation-name: moveBox;
+
+  /* animation-duration:
+     Time taken to complete ONE animation cycle */
+  animation-duration: 2s;
+
+  /* animation-timing-function:
+     Speed curve of animation */
+  animation-timing-function: ease-in-out;
+
+  /* animation-delay:
+     Wait time before animation starts */
+  animation-delay: 0s;
+
+  /* animation-iteration-count:
+     Number of times animation runs */
+  animation-iteration-count: infinite;
+
+  /* animation-direction:
+     alternate = forward then backward */
+  animation-direction: alternate;
+}
+
+/* Defines animation steps */
+@keyframes moveBox {
+
+  /* Starting point of animation */
+  from {
+    transform: translateX(0);
+    background-color: steelblue;
+  }
+
+  /* Ending point of animation */
+  to {
+    transform: translateX(200px);
+    background-color: tomato;
+  }
+}
+
+/* =================================================
+   SCALE ANIMATION (USING SHORTHAND)
+================================================= */
+.scale {
+
+  /* animation shorthand order:
+     name duration timing-function delay iteration-count direction */
+  animation: scaleBox 1.5s ease-in 0s infinite alternate;
+}
+
+/* Keyframes for scaling effect */
+@keyframes scaleBox {
+  0% {
+    transform: scale(1);   /* Normal size */
+  }
+  100% {
+    transform: scale(1.4); /* Increased size */
+  }
+}
+
+/* =================================================
+   ROTATE ANIMATION
+================================================= */
+.rotate {
+
+  /* Linear timing makes rotation constant speed */
+  animation: rotateBox 2s linear infinite;
+}
+
+/* Keyframes for rotation */
+@keyframes rotateBox {
+  0% {
+    transform: rotate(0deg);    /* Start angle */
+  }
+  100% {
+    transform: rotate(360deg);  /* Full rotation */
+  }
+}

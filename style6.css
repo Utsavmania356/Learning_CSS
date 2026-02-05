@@ -1,0 +1,10 @@
+div{
+    height: 200px;
+    width:200px;
+    background-image:url("Screenshot 2026-01-30 115644.png");
+    background-size: cover;
+    position: fixed;
+    right: 0px;
+    top: 50px;
+    
+}

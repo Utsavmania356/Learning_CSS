@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* MAIN BOX */
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: steelblue;
+  color: white;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+
+  /* 🔹 ALL TRANSITION PROPERTIES */
+  transition-property: width, background-color, font-size, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s;
+}
+
+/* HOVER STATE */
+.box:hover {
+  width: 300px;
+  background-color: tomato;
+  font-size: 24px;
+  transform: rotate(10deg);
+}
